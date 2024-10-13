@@ -13,6 +13,7 @@
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;
@@ -69,3 +70,46 @@ nav ul a:hover{
 
 /* seccion banner */
 
+.banner{
+    position: relative;
+    overflow: hidden;
+    margin: 150px 0;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 420px;
+}
+
+.txt{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: start;
+}
+
+.txt p{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.txt a{
+    color: hsl(0, 0%, 99%);
+}
+
+button {
+    margin: 15px;
+    padding: 8px 30px;
+    background-color: var(--color1);
+    border: none;
+    border-radius: 45px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease ;
+}
+
+button:hover{
+    background-color: #CC2936;
+    transform: scale(1.2);
+    box-shadow: 6px 3px 10px black ;
+}
