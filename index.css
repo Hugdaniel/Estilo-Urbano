@@ -306,3 +306,137 @@ button:hover{
     letter-spacing: 0.2em;
     color: aliceblue;
 }
+
+/* optimizacion pantallas mas pequeñas */
+
+/* Para pantallas de tablets y dispositivos pequeños */
+@media (max-width: 768px) {
+    /* Ajustar el menú de navegación */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        width: 200px; /* Ajustar el tamaño del logo */
+    }
+
+    /* Ajustar el banner */
+    .banner img {
+        height: 300px;
+    }
+
+    .txt p {
+        font-size: 1em; /* Reducir el tamaño del texto del banner */
+    }
+
+    button {
+        padding: 5px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Ajustar los productos */
+    #productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 100px auto;
+    }
+
+    #productos img {
+        height: 350px; /* Ajustar la altura de las imágenes de productos */
+    }
+
+    /* Ajustar "Sobre Nosotros" */
+    .nosotros {
+        width: 90%;
+        top: 25%;
+        left: 5%;
+    }
+
+    /* Formulario de contacto */
+    #contacto {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form fieldset {
+        padding: 20px;
+    }
+
+    /* Pie de página */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes i {
+        font-size: 1.2em;
+    }
+
+    .address h6 {
+        font-size: 1.2em;
+    }
+}
+
+/* Para pantallas más pequeñas como teléfonos móviles */
+@media (max-width: 480px) {
+    /* Ajustar el logo */
+    .logo img {
+        width: 150px;
+    }
+
+    /* Ajustar el menú de navegación */
+    nav ul a {
+        font-size: 0.7em;
+    }
+
+    /* Ajustar el banner */
+    .banner img {
+        height: 200px;
+    }
+
+    .txt p {
+        font-size: 0.9em;
+    }
+
+    /* Ajustar los productos */
+    #productos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 50px auto;
+    }
+
+    #productos img {
+        height: 300px;
+    }
+
+    /* Ajustar "Sobre Nosotros" */
+    .nosotros {
+        width: 100%;
+        top: 20%;
+        left: 0;
+    }
+
+    /* Formulario de contacto */
+    #contacto {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form fieldset {
+        padding: 15px;
+    }
+
+    /* Pie de página */
+    .footer {
+        padding: 10px;
+    }
+
+    .address h6 {
+        font-size: 1em;
+    }
+}
