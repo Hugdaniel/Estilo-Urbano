@@ -258,3 +258,51 @@ button:hover{
 .form .btn:hover{  
     background-color: #CC2936;  
 }  
+
+/* seccion footer */
+
+.footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;
+    background-color: #345995;
+    padding: 0 45px;
+}
+
+.redes a{
+    color: aliceblue;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.redes i{
+    letter-spacing: 0.4em;
+    font-size: 1.5em;
+}
+
+.redes a:hover{
+    color: #f82702;
+    mix-blend-mode: screen;
+    transform: scale(1.1);
+}
+
+.address{
+    display: block;
+    text-align: end;
+}
+
+.address h6{
+    font-size: 1.5em;
+    color: aliceblue;
+
+}
+
+.address p{
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: aliceblue;
+}
