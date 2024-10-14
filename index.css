@@ -113,3 +113,43 @@ button:hover{
     transform: scale(1.2);
     box-shadow: 6px 3px 10px black ;
 }
+
+/* seccion productos */
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 200px auto;
+}
+
+#productos img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.info-productos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid gray;
+    height: 150px;
+}
+
+.info-productos p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.info-productos h6{
+    font-size: 1.1em;
+    background-color: var(--color3);
+    padding: 5px 40px;
+    color: aliceblue;
+    border-radius: 40px;
+}
